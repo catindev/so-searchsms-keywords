@@ -1,31 +1,31 @@
 {
-	"//1": "describes your app and its dependencies",
-	"//2": "https://docs.npmjs.com/files/package.json",
-	"//3": "updating this file will download and update your packages",
-	"name": "so-searchsms-keywords",
-	"version": "0.0.1",
-	"description": "helper API for SO admin UI",
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js"
-	},
-	"dependencies": {
-		"express": "^4.15.2",
-		"node-json-db": "^0.7.3",
-		"lodash": "^4.17.4",
-		"body-parser": "^1.17.1",
-		"uid": "^0.0.2"
-	},
-	"engines": {
-		"node": "6.9.x"
-	},
-	"repository": {
-		"url": "https://glitch.com/#!/project/welcome-project"
-	},
-	"license": "MIT",
-	"keywords": [
-		"node",
-		"glitch",
-		"express"
-	]
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "so-searchsms-keywords",
+  "version": "1.0.0",
+  "description": "helper API for SO admin UI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "node-json-db": "^0.7.3",
+    "lodash": "^4.17.4",
+    "body-parser": "^1.17.1",
+    "uid": "^0.0.2"
+  },
+  "engines": {
+    "node": "6.9.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/#!/project/welcome-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
