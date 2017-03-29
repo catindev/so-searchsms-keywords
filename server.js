@@ -6,6 +6,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
 const L = require('lodash');
+const uid = require('uid');
 
 const JsonDB = require('node-json-db');
 const db = new JsonDB("Keywords", true, false);
@@ -47,8 +48,11 @@ app.post("/v1/keywords", function (request, response) {
     return response.json({status:400, message: 'Dictionary name required'})
   }
   
-  db.push("/",{ name: request.body.name, items: [] });
-  response.sendStatus(200);
+  const { name } = request.body.name ;
+  const id = uid();
+  
+  db.push('/' + id,{ name, items: [] });
+  response.json({ name, id });
 });
 
 // db.delete("/test1");
